@@ -5,7 +5,7 @@ import calsses from "./ErrorModal.module.css";
 const ErrorModal = (props) => {
   return (
     <div>
-      <div className={calsses.backdrop} />
+      <div className={calsses.backdrop} onClick={props.onConfirm} />
       <Card className={calsses.modal}>
         <header className={calsses.header}>
           <h2>{props.title}</h2>
@@ -14,7 +14,7 @@ const ErrorModal = (props) => {
           <p>{props.message}</p>
         </div>
         <footer className={calsses.actions}>
-          <Button>Okay</Button>
+          <Button onClick={props.onConfirm}>Okay</Button>
         </footer>
       </Card>
     </div>
