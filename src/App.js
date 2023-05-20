@@ -12,10 +12,10 @@ function App() {
   };
   console.log(userData);
   return (
-    <div>
+    <React.Fragment>
       <AddUser onSave={UserDataHandler} />
       <UserList users={userData} />
-    </div>
+    </React.Fragment>
   );
 }
 
