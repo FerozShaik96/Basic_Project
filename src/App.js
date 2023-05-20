@@ -10,7 +10,6 @@ function App() {
       return [...prevUserData, data];
     });
   };
-  console.log(userData);
   return (
     <React.Fragment>
       <AddUser onSave={UserDataHandler} />

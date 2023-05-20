@@ -43,9 +43,9 @@ const AddUser = (props) => {
       id: Math.random().toString(),
     };
     props.onSave(userData);
-    enteredAgeRef.current.value = "";
-    enteredAgeRef.current.value = "";
-    enteredCollegeRef.current.value = "";
+    nameInputRef.current.value = "";
+    ageInputRef.current.value = "";
+    collegeInputRef.current.value = "";
     // setEnteredUserName("");
     // setEnteredAge("");
     // setEnteredCollege("");
